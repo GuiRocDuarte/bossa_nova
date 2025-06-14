@@ -17,27 +17,33 @@ Faça o download dos arquivos deste repositório.
 Você pode:
 - Fazer **upload direto** no Colab (ícone de pasta > upload de arquivos)
 - **Ou** salvar os arquivos no seu Google Drive e montá-lo no Colab com `drive.mount`
+  
+Todos os arquivos devem estar na mesma pasta, **incluindo** os modelos (.keras), tokenizadores (.json) e `app.py`.
 
-### 3. Localizar a Sessão "Streamlit"
+### 3. Localizar a Subsessão "Executar"
 
-No notebook Colab, vá até a seção marcada como `# Streamlit`.
+No notebook Colab, vá até a subseção marcada como  `Executar`, dentro da seção `Streamlit`.
 
-### 4. Configurar o Caminho
-
-Localize a variável `diretorio_usado` e altere seu valor para o caminho onde estão os arquivos (PS: existem duas declarações, altere ambas).
-
-### 5. Gerar Token do Ngrok
+### 4. Gerar Token do Ngrok
 
 - Acesse: https://dashboard.ngrok.com/authtokens
 - Faça login ou crie uma conta
-- Copie seu auth token na parte indicada do código
+- Crie ou copie seu auth token e depois cole-o na parte indicada do código
+
+Caso apareça a seguinte mensagem, está tudo certo: `Authtoken saved to configuration file: /root/.config/ngrok/ngrok.yml`
+
+### 5. Configurar o Caminho
+
+Localize a variável `diretorio_usado` e altere seu valor para o caminho onde estão os arquivos.
 
 ### 6. Rodar os Blocos
 
-Execute todos os blocos de código da seção Streamlit, na ordem em que aparecem.
-
-ATENÇÃO: O último bloco serve apenas para limpar o cache (execução opcional).
+Execute todos os blocos de código da seção Executar, na ordem em que aparecem.
 
 ### 7. Acessar o Aplicativo
 
 Ao final da execução, um link será gerado. Clique nele para abrir a aplicação no navegador e aproveitar!
+
+Caso apareça algo pareceido com a imagem abaixo, apenas clique em `Visit Site`
+
+![image](https://github.com/user-attachments/assets/631c83b1-3fb4-4f60-9d80-404d9af571dc)
